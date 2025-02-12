@@ -1,3 +1,29 @@
 .rightContainer{
     margin-left: 20px;
+    display: flex;
+}
+
+.rightContainer iframe{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.form{
+    display: flex;
+}
+
+.form div{
+    margin: 50px;
+}
+
+.myButtons{
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(218, 187, 187);
+    margin: 30px;
+}
+
+.myButtons:hover {
+    background-color: rgb(152, 112, 112);
 }

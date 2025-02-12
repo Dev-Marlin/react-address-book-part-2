@@ -4,6 +4,7 @@ import { createContext, useState, useEffect } from 'react';
 import ContactList from './components/ContactList';
 import ContactForm from './components/ContactForm';
 import ViewContact from './components/ViewContact';
+import UpdateContactForm from './components/UpdateContactForm';
 
 export const ContactContext = createContext();
 
@@ -19,7 +20,7 @@ function App() {
             setContactList(jsonData);
         }
         fetchContacts();
-    },[contactList]);
+    },[]);
 
     return (
         <div className="homecontainer">
@@ -40,9 +41,13 @@ function App() {
                         path="/createcontact"
                         element={<ContactForm></ContactForm>}/>
                     
-                        <Route
-                            path="/contact/:id"
-                            element={<ViewContact></ViewContact>}/>
+                    <Route
+                        path="/contact/:id"
+                        element={<ViewContact></ViewContact>}/>
+
+                    <Route
+                        path="/contact/update/:id"
+                        element={<UpdateContactForm></UpdateContactForm>}/>
             </Routes>
         </ContactContext.Provider>
         </div>
