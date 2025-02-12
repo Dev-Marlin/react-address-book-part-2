@@ -1,0 +1,13 @@
+.sidemenu
+{
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid;
+    border-color: rgb(148, 148, 148);
+    box-shadow: 2px 2px 3px gray;
+}
+
+.homecontainer
+{
+    display: flex;
+}
