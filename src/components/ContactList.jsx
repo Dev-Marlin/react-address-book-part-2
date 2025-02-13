@@ -8,7 +8,6 @@ import './rightContainer.css';
 
 function ContactList() {
     const {contactList} = useContext(ContactContext);
-    const [filteredList, setFilteredList] = useState([]);
     const [filter, setFilter] = useState("");
 
   return (

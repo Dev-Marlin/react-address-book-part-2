@@ -15,18 +15,6 @@ function UpdateContactForm() {
           setContact(contactList.find((contact) => contact.id == id));
         }
       }, [contactList,id]);
-
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [city, setCity] = useState('');
-    const [street, setStreet] = useState('');
-    const [gender, setGender] = useState('');
-    const [email, setEmail] = useState('');
-    const [jobTitle, setJobTitle] = useState('');
-    const [latitude, setLatitude] = useState('');
-    const [longitude, setLongitude] = useState('');
-    const [favouriteColour, setFavouriteColour] = useState('');
-    const [profileImage, setProfileImage] = useState('');
     
 
 
@@ -55,17 +43,6 @@ function editContact()
         }
     }
     updateContact();
-      setFirstName("");
-      setLastName("");
-      setCity("");
-      setStreet("");
-      setGender("");
-      setEmail("");
-      setJobTitle("");
-      setLatitude("");
-      setLongitude("");
-      setFavouriteColour("");
-      setProfileImage("");
 }
 
     if (!contact) return <p>Loading...</p>
